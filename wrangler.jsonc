@@ -1,0 +1,13 @@
+// Generic Worker settings: serves the built game (dist/) as static files.
+// Account-specific settings (domain, Worker name, account ID) come from .env; see .env.example.
+// Deploy with `npm run deploy` (scripts/deploy.mjs merges .env into this file).
+// Only full-line // comments are allowed here (the deploy script's parser strips them).
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "scrapyard-siege",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist"
+  },
+  "preview_urls": false
+}
